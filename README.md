@@ -22,6 +22,56 @@ This project demonstrates the deployment of a full MERN (MongoDB, Express, React
 - **MongoDB**: MongoDB Atlas Cluster (secured via environment variables)
 
 ---
+## 🛠️ Deployment Scripts (Optional)
+Inside deployment/:
+
+docker-compose.yml: Containerized backend + Mongo setup
+
+nginx.conf: Optional NGINX reverse proxy configuration
+
+🚀 Deployment Instructions
+🖥️ Backend Deployment (Render)
+Connect GitHub repo to Render
+
+Create a new Web Service
+
+Set environment variables
+
+Define build/start commands:
+
+Build Command: npm install
+
+Start Command: node server.js
+
+🌍 Frontend Deployment (Vercel/Netlify)
+Connect GitHub repo to Vercel or Netlify
+
+Set environment variables in the dashboard
+
+Default build settings:
+
+Framework: React
+
+Build Command: npm run build
+
+Publish Directory: client/build
+
+## 🔄 GitHub Actions (CI/CD)
+CI/CD pipelines are defined in .github/workflows/:
+
+Workflow	File	Description
+Frontend CI	frontend-ci.yml	Tests and builds React app
+Backend CI	backend-ci.yml	Lints/tests backend code
+Frontend CD	frontend-cd.yml	Deploys to Vercel/Netlify
+Backend CD	backend-cd.yml	Deploys to Render/Heroku
+
+## 🧯 Monitoring
+📡 Uptime Monitoring
+File: monitoring/uptime-monitor.json
+Set up on UptimeRobot to watch your deployed backend and frontend.
+
+## 🛠️ Error Tracking
+File: monitoring/sentry.config.js
 
 ## ⚙️ Setup Instructions
 
