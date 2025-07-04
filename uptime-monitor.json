@@ -1,0 +1,13 @@
+{
+  "name": "MERN Chat App",
+  "type": "HTTP(s)",
+  "url": "https://your-backend-url.com/health",
+  "interval": 5,
+  "threshold": 1,
+  "alert_contacts": [
+    {
+      "type": "email",
+      "value": "your@email.com"
+    }
+  ]
+}
