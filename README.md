@@ -1,4 +1,35 @@
 # Deployment-plp-week7
+# 🚀 MERN Chat App – Deployment and DevOps
+
+This project demonstrates the deployment of a full MERN (MongoDB, Express, React, Node.js) stack chat application using GitHub Actions CI/CD pipelines, cloud deployment platforms, and basic monitoring tools.
+
+---
+
+## 📦 Project Overview
+
+- **Frontend**: React (deployed on Vercel/Netlify)
+- **Backend**: Express.js (deployed on Render/Heroku)
+- **Database**: MongoDB Atlas
+- **CI/CD**: GitHub Actions
+- **Monitoring**: Sentry for error tracking, UptimeRobot for service uptime
+
+---
+
+## 🌐 Deployed URLs
+
+- **Frontend**: [https://your-frontend-url.vercel.app](https://your-frontend-url.vercel.app)
+- **Backend**: [https://your-backend-url.onrender.com](https://your-backend-url.onrender.com)
+- **MongoDB**: MongoDB Atlas Cluster (secured via environment variables)
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/your-username/mern-chat-devops.git
+cd mern-chat-devops
 
 📁 root/
 │
